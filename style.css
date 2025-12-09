@@ -90,6 +90,12 @@ nav {
     font-weight: 800;
     color: var(--primary);
     letter-spacing: -0.5px;
+    width: 150px;          /* set logo size */
+    height: 100px;
+    background-image: url('vote.png'); /* path to your image */
+    background-size: contain;  /* keeps correct proportions */
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 nav ul {
@@ -272,7 +278,7 @@ nav ul li a.active {
 .hero--home {
     min-height: 90vh;
     background-color: #111827;
-    background-image: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.6)), url('watwat.jpg');
+    background-image: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.6)), url('https://readdy.ai/api/search-image?query=Young%20Filipino%20voters%20at%20polling%20station%20with%20Philippine%20flag%20background%2C%20modern%20democratic%20participation%2C%20civic%20engagement%2C%20bright%20natural%20lighting%2C%20professional%20photography%20style%2C%20clean%20and%20inspiring%20atmosphere%2C%20people%20casting%20ballots%20with%20confidence%20and%20pride%2C%20patriotic%20colors%20of%20blue%20red%20and%20white&width=1920&height=1080&seq=hero001&orientation=landscape');
     display: flex;
     align-items: center;
     text-align: left;
@@ -501,6 +507,25 @@ nav ul li a.active {
 }
 
 .vision-section p {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+    color: var(--text-gray);
+}
+
+.features-section {
+    text-align: center;
+    background: var(--bg-light);
+}
+
+.features-section h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.features-section p {
     max-width: 700px;
     margin: 0 auto 50px;
     font-size: 1.1rem;

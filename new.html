@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kabataan Empowered: Your Guide to Smart Voting</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#1e40af',
+secondary: '#dc2626'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+</style>
+</head>
+<body class="bg-white text-gray-900">
+<!-- Header Navigation -->
+<header class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center">
+<img src="https://readdy.ai/api/search-image?query=Large%20prominent%20logo%20design%20for%20Filipino%20youth%20voting%20empowerment%20organization%2C%20featuring%20Philippine%20archipelago%20silhouette%20with%20voting%20ballot%20integrated%20into%20the%20map%20design%2C%20golden%20sun%20rays%20from%20Philippine%20flag%2C%20stylized%20hands%20holding%20ballot%20with%20three%20stars%20motif%2C%20vibrant%20blue%20red%20yellow%20patriotic%20colors%2C%20modern%20civic%20engagement%20symbol%2C%20bold%20contemporary%20design%20with%20strong%20Filipino%20identity%20and%20democratic%20themes&width=200&height=80&seq=logo003&orientation=landscape" alt="Kabataan Empowered Logo" class="h-16 w-auto object-contain">
+</div>
+<nav class="hidden md:flex space-x-8">
+<a href="#home" class="nav-link active text-primary font-semibold border-b-2 border-primary pb-1 bg-primary/5 px-3 py-2 rounded-t-md cursor-pointer">Home</a>
+<a href="#about" class="nav-link text-gray-500 hover:text-primary hover:bg-primary/5 transition-all duration-300 px-3 py-2 rounded-md font-medium cursor-pointer">About</a>
+<a href="#resources" class="nav-link text-gray-500 hover:text-primary hover:bg-primary/5 transition-all duration-300 px-3 py-2 rounded-md font-medium cursor-pointer">Resources</a>
+<a href="#community" class="nav-link text-gray-500 hover:text-primary hover:bg-primary/5 transition-all duration-300 px-3 py-2 rounded-md font-medium cursor-pointer">Community</a>
+<a href="#contacts" class="nav-link text-gray-500 hover:text-primary hover:bg-primary/5 transition-all duration-300 px-3 py-2 rounded-md font-medium cursor-pointer">Contacts</a>
+</nav>
+<button class="md:hidden w-6 h-6 flex items-center justify-center cursor-pointer">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=Young%20Filipino%20voters%20at%20polling%20station%20with%20Philippine%20flag%20background%2C%20modern%20democratic%20participation%2C%20civic%20engagement%2C%20bright%20natural%20lighting%2C%20professional%20photography%20style%2C%20clean%20and%20inspiring%20atmosphere%2C%20people%20casting%20ballots%20with%20confidence%20and%20pride%2C%20patriotic%20colors%20of%20blue%20red%20and%20white&width=1920&height=1080&seq=hero001&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-transparent"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="text-white">
+<h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+Kabataan Empowered: Your Guide to <span class="text-blue-300">Smart </span> <span class=" text-yellow-300"> Voting</span>
+</h1>
+<p class="text-xl mb-8 text-gray-200 leading-relaxed">
+Empowering Filipino youth with the knowledge and tools needed to make informed decisions at the ballot box. Join thousands of young voters building a better future for the Philippines.
+</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary hover:bg-blue-700 text-white px-8 py-4 !rounded-button font-semibold transition-colors whitespace-nowrap cursor-pointer">
+Start Learning
+</button>
+<button class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 !rounded-button font-semibold transition-colors whitespace-nowrap cursor-pointer">
+Register to Vote
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision Section -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-6">Our Vision</h2>
+<div class="max-w-4xl mx-auto">
+<p class="text-2xl text-gray-700 leading-relaxed mb-8 font-light">
+A Philippines where every young Filipino is equipped with the knowledge, confidence, and tools to participate meaningfully in democratic processes and shape the future of our nation.
+</p>
+<div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
+<div class="grid md:grid-cols-3 gap-6 text-center">
+<div class="vision-stat" data-target="250000">
+<div class="text-3xl font-bold text-primary mb-2">0+</div>
+<div class="text-gray-600">Young Voters Empowered</div>
+</div>
+<div class="vision-stat" data-target="500">
+<div class="text-3xl font-bold text-secondary mb-2">0+</div>
+<div class="text-gray-600">Communities Reached</div>
+</div>
+<div class="vision-stat" data-target="95">
+<div class="text-3xl font-bold text-yellow-600 mb-2">0%</div>
+<div class="text-gray-600">Voter Education Success Rate</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values Section -->
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-6">Our Core Values</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+The principles that guide our mission to empower Filipino youth through civic education and democratic participation.
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="value-card bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer" data-value="integrity">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-500/10 rounded-xl mb-6 mx-auto">
+<i class="ri-shield-check-line text-3xl text-blue-600"></i>
+</div>
+<h3 class="text-xl font-bold mb-4 text-center">Integrity</h3>
+<p class="text-gray-600 text-center text-sm">
+Maintaining honesty and transparency in all our educational materials and community interactions.
+</p>
+</div>
+<div class="value-card bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer" data-value="empowerment">
+<div class="w-16 h-16 flex items-center justify-center bg-green-500/10 rounded-xl mb-6 mx-auto">
+<i class="ri-hand-heart-line text-3xl text-green-600"></i>
+</div>
+<h3 class="text-xl font-bold mb-4 text-center">Empowerment</h3>
+<p class="text-gray-600 text-center text-sm">
+Equipping young Filipinos with knowledge and confidence to make informed democratic choices.
+</p>
+</div>
+<div class="value-card bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer" data-value="inclusivity">
+<div class="w-16 h-16 flex items-center justify-center bg-purple-500/10 rounded-xl mb-6 mx-auto">
+<i class="ri-team-line text-3xl text-purple-600"></i>
+</div>
+<h3 class="text-xl font-bold mb-4 text-center">Inclusivity</h3>
+<p class="text-gray-600 text-center text-sm">
+Creating a welcoming space for all Filipino youth regardless of background, belief, or political affiliation.
+</p>
+</div>
+<div class="value-card bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer" data-value="innovation">
+<div class="w-16 h-16 flex items-center justify-center bg-orange-500/10 rounded-xl mb-6 mx-auto">
+<i class="ri-lightbulb-line text-3xl text-orange-600"></i>
+</div>
+<h3 class="text-xl font-bold mb-4 text-center">Innovation</h3>
+<p class="text-gray-600 text-center text-sm">
+Using creative and modern approaches to make civic education engaging and accessible to digital natives.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Features Overview -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Empowering Young Voters</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Comprehensive resources and tools designed specifically for Filipino youth to navigate the voting process with confidence and make informed electoral decisions.
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-xl mb-6">
+<i class="ri-book-open-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Voting Education</h3>
+<p class="text-gray-600 mb-6">
+Complete guides on the voting process, candidate research, and understanding ballot measures.
+</p>
+<a href="#resources" class="text-primary font-medium hover:text-blue-700 transition-colors cursor-pointer">
+Learn More →
+</a>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-xl mb-6">
+<i class="ri-group-line text-2xl text-secondary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Community Hub</h3>
+<p class="text-gray-600 mb-6">
+Connect with fellow young voters, share experiences, and participate in civic discussions.
+</p>
+<a href="#community" class="text-primary font-medium hover:text-blue-700 transition-colors cursor-pointer">
+Join Community →
+</a>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-yellow-500/10 rounded-xl mb-6">
+<i class="ri-user-search-line text-2xl text-yellow-600"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Candidate Info</h3>
+<p class="text-gray-600 mb-6">
+Research tools and candidate profiles to help you make informed choices on election day.
+</p>
+<a href="#resources" class="text-primary font-medium hover:text-blue-700 transition-colors cursor-pointer">
+Explore Candidates →
+</a>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-green-500/10 rounded-xl mb-6">
+<i class="ri-calendar-event-line text-2xl text-green-600"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Election Calendar</h3>
+<p class="text-gray-600 mb-6">
+Stay updated with important election dates, registration deadlines, and voting schedules.
+</p>
+<a href="#resources" class="text-primary font-medium hover:text-blue-700 transition-colors cursor-pointer">
+View Calendar →
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Access Section -->
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-4">Quick Access Tools</h2>
+<p class="text-xl text-gray-600">
+Essential resources at your fingertips for a smooth voting experience
+</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-gradient-to-br from-primary to-blue-700 p-8 rounded-2xl text-white">
+<div class="w-12 h-12 flex items-center justify-center bg-white/20 rounded-lg mb-6">
+<i class="ri-user-add-line text-xl"></i>
+</div>
+<h3 class="text-2xl font-bold mb-4">Voter Registration</h3>
+<p class="mb-6 text-blue-100">
+Step-by-step guide to register as a voter, including required documents and deadlines.
+</p>
+<button class="bg-white text-primary px-6 py-3 !rounded-button font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap cursor-pointer">
+Register Now
+</button>
+</div>
+<div class="bg-gradient-to-br from-secondary to-red-700 p-8 rounded-2xl text-white">
+<div class="w-12 h-12 flex items-center justify-center bg-white/20 rounded-lg mb-6">
+<i class="ri-map-pin-line text-xl"></i>
+</div>
+<h3 class="text-2xl font-bold mb-4">Find Your Precinct</h3>
+<p class="mb-6 text-red-100">
+Locate your assigned voting precinct and get directions to your polling station.
+</p>
+<button class="bg-white text-secondary px-6 py-3 !rounded-button font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap cursor-pointer">
+Find Location
+</button>
+</div>
+<div class="bg-gradient-to-br from-yellow-500 to-orange-600 p-8 rounded-2xl text-white">
+<div class="w-12 h-12 flex items-center justify-center bg-white/20 rounded-lg mb-6">
+<i class="ri-shield-check-line text-xl"></i>
+</div>
+<h3 class="text-2xl font-bold mb-4">Voting Checklist</h3>
+<p class="mb-6 text-yellow-100">
+Complete checklist to ensure you're prepared and avoid common voting mistakes.
+</p>
+<button class="bg-white text-orange-600 px-6 py-3 !rounded-button font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap cursor-pointer">
+View Checklist
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Engagement Preview -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-4xl font-bold text-gray-900 mb-6">Join the Movement</h2>
+<p class="text-xl text-gray-600 mb-8">
+Connect with thousands of young Filipino voters who are making their voices heard. Share experiences, ask questions, and learn from peers in our vibrant community.
+</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
+<i class="ri-chat-3-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold">Discussion Forums</h4>
+<p class="text-gray-600">Engage in meaningful conversations about politics and governance</p>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full">
+<i class="ri-calendar-line text-secondary"></i>
+</div>
+<div>
+<h4 class="font-semibold">Community Events</h4>
+<p class="text-gray-600">Attend voter education workshops and civic engagement activities</p>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 flex items-center justify-center bg-green-500/10 rounded-full">
+<i class="ri-question-answer-line text-green-600"></i>
+</div>
+<div>
+<h4 class="font-semibold">Q&A Support</h4>
+<p class="text-gray-600">Get answers to your voting questions from experienced volunteers</p>
+</div>
+</div>
+</div>
+<button class="bg-primary hover:bg-blue-700 text-white px-8 py-4 !rounded-button font-semibold transition-colors whitespace-nowrap cursor-pointer">
+Join Community
+</button>
+</div>
+<div class="bg-white rounded-2xl shadow-lg p-8">
+<h3 class="text-xl font-semibold mb-6">Recent Community Activity</h3>
+<div class="space-y-6">
+<div class="flex items-start space-x-4">
+<div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+<i class="ri-user-line text-primary"></i>
+</div>
+<div class="flex-1">
+<div class="flex items-center space-x-2 mb-1">
+<span class="font-semibold text-sm">Maria Santos</span>
+<span class="text-gray-500 text-xs">2 hours ago</span>
+</div>
+<p class="text-gray-700 text-sm">
+"Just completed my voter registration! The guide here was super helpful. Thanks to everyone who answered my questions."
+</p>
+<div class="flex items-center space-x-4 mt-2">
+<button class="text-gray-500 hover:text-primary text-xs flex items-center space-x-1 cursor-pointer">
+<i class="ri-heart-line"></i>
+<span>12</span>
+</button>
+<button class="text-gray-500 hover:text-primary text-xs cursor-pointer">Reply</button>
+</div>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center">
+<i class="ri-user-line text-secondary"></i>
+</div>
+<div class="flex-1">
+<div class="flex items-center space-x-2 mb-1">
+<span class="font-semibold text-sm">Carlos Reyes</span>
+<span class="text-gray-500 text-xs">5 hours ago</span>
+</div>
+<p class="text-gray-700 text-sm">
+"Attending the candidate forum this weekend. Who else is going? Let's meet up and discuss afterwards!"
+</p>
+<div class="flex items-center space-x-4 mt-2">
+<button class="text-gray-500 hover:text-primary text-xs flex items-center space-x-1 cursor-pointer">
+<i class="ri-heart-line"></i>
+<span>8</span>
+</button>
+<button class="text-gray-500 hover:text-primary text-xs cursor-pointer">Reply</button>
+</div>
+</div>
+</div>
+<div class="flex items-start space-x-4">
+<div class="w-10 h-10 bg-yellow-500/10 rounded-full flex items-center justify-center">
+<i class="ri-user-line text-yellow-600"></i>
+</div>
+<div class="flex-1">
+<div class="flex items-center space-x-2 mb-1">
+<span class="font-semibold text-sm">Ana Cruz</span>
+<span class="text-gray-500 text-xs">1 day ago</span>
+</div>
+<p class="text-gray-700 text-sm">
+"First time voter here! The mistake prevention guide really helped me understand what to watch out for. Feeling confident now!"
+</p>
+<div class="flex items-center space-x-4 mt-2">
+<button class="text-gray-500 hover:text-primary text-xs flex items-center space-x-1 cursor-pointer">
+<i class="ri-heart-line"></i>
+<span>15</span>
+</button>
+<button class="text-gray-500 hover:text-primary text-xs cursor-pointer">Reply</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-primary text-white relative overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=Philippine%20flag%20waving%20in%20the%20wind%20with%20golden%20sunlight%2C%20patriotic%20background%20with%20blue%20and%20red%20colors%2C%20inspiring%20democratic%20atmosphere%2C%20clean%20minimalist%20composition%2C%20professional%20photography%2C%20bright%20natural%20lighting%2C%20symbol%20of%20Filipino%20democracy%20and%20freedom&width=1920&height=600&seq=cta001&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-primary/80"></div>
+<div class="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl lg:text-5xl font-bold mb-6">
+Ready to Make Your Voice Heard?
+</h2>
+<p class="text-xl mb-8 text-blue-100">
+Join thousands of empowered Filipino youth who are shaping the future of our nation through informed voting.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-white text-primary px-8 py-4 !rounded-button font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap cursor-pointer">
+Get Started Today
+</button>
+<button class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 !rounded-button font-semibold transition-colors whitespace-nowrap cursor-pointer">
+Download Resources
+</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-8">
+<div class="md:col-span-2">
+<img src="https://readdy.ai/api/search-image?query=Large%20footer%20logo%20design%20for%20Filipino%20youth%20voting%20empowerment%20organization%2C%20featuring%20Philippine%20archipelago%20silhouette%20with%20voting%20ballot%20integrated%20into%20the%20map%20design%2C%20golden%20sun%20rays%20from%20Philippine%20flag%2C%20stylized%20hands%20holding%20ballot%20with%20three%20stars%20motif%2C%20vibrant%20blue%20red%20yellow%20patriotic%20colors%20optimized%20for%20dark%20backgrounds%2C%20modern%20civic%20engagement%20symbol%2C%20bold%20contemporary%20design%20with%20strong%20Filipino%20identity%20and%20democratic%20themes&width=220&height=70&seq=logo004&orientation=landscape" alt="Kabataan Empowered Logo" class="h-14 w-auto object-contain mb-4">
+<p class="text-gray-400 mb-6 max-w-md">
+Empowering Filipino youth with the knowledge and tools needed to participate effectively in democratic processes and make informed voting decisions.
+</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-primary transition-colors cursor-pointer">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-primary transition-colors cursor-pointer">
+<i class="ri-twitter-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-primary transition-colors cursor-pointer">
+<i class="ri-instagram-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-primary transition-colors cursor-pointer">
+<i class="ri-youtube-fill"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#about" class="hover:text-white transition-colors cursor-pointer">About Us</a></li>
+<li><a href="#resources" class="hover:text-white transition-colors cursor-pointer">Voting Resources</a></li>
+<li><a href="#community" class="hover:text-white transition-colors cursor-pointer">Community</a></li>
+<li><a href="#contacts" class="hover:text-white transition-colors cursor-pointer">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Resources</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#" class="hover:text-white transition-colors cursor-pointer">Voter Registration</a></li>
+<li><a href="#" class="hover:text-white transition-colors cursor-pointer">Election Calendar</a></li>
+<li><a href="#" class="hover:text-white transition-colors cursor-pointer">Candidate Information</a></li>
+<li><a href="#" class="hover:text-white transition-colors cursor-pointer">Voting Guidelines</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm">
+© 2024 Kabataan Empowered. All rights reserved.
+</p>
+<div class="flex space-x-6 mt-4 md:mt-0">
+<a href="#" class="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">Terms of Service</a>
+<a href="#" class="text-gray-400 hover:text-white text-sm transition-colors cursor-pointer">Disclaimer</a>
+</div>
+</div>
+</div>
+</footer>
+<script id="navigation-handler">
+document.addEventListener('DOMContentLoaded', function() {
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+navLinks.forEach(l => {
+l.classList.remove('active', 'text-primary', 'font-semibold', 'border-b-2', 'border-primary', 'pb-1', 'bg-primary/5', 'rounded-t-md');
+l.classList.add('text-gray-500', 'font-medium', 'rounded-md');
+});
+this.classList.remove('text-gray-500', 'font-medium', 'rounded-md');
+this.classList.add('active', 'text-primary', 'font-semibold', 'border-b-2', 'border-primary', 'pb-1', 'bg-primary/5', 'rounded-t-md');
+});
+});
+});
+</script>
+<script id="mobile-menu-handler">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.querySelector('button.md\\:hidden');
+const nav = document.querySelector('nav');
+if (mobileMenuButton && nav) {
+mobileMenuButton.addEventListener('click', function() {
+nav.classList.toggle('hidden');
+});
+}
+});
+</script>
+<script id="smooth-scroll-handler">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+const href = this.getAttribute('href');
+if (href === '#' || href.length === 1) return;
+e.preventDefault();
+const target = document.querySelector(href);
+if (target) {
+target.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+});
+</script>
+<script id="vision-stats-animation">
+document.addEventListener('DOMContentLoaded', function() {
+const observerOptions = {
+threshold: 0.5,
+rootMargin: '0px 0px -100px 0px'
+};
+const observer = new IntersectionObserver(function(entries) {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+const stats = entry.target.querySelectorAll('.vision-stat');
+stats.forEach(stat => {
+const target = parseInt(stat.dataset.target);
+const display = stat.querySelector('div');
+const suffix = target === 95 ? '%' : '+';
+animateNumber(display, target, suffix);
+});
+observer.unobserve(entry.target);
+}
+});
+}, observerOptions);
+const visionSection = document.querySelector('.vision-stat').closest('section');
+if (visionSection) {
+observer.observe(visionSection);
+}
+function animateNumber(element, target, suffix) {
+let current = 0;
+const increment = target / 50;
+const timer = setInterval(() => {
+current += increment;
+if (current >= target) {
+current = target;
+clearInterval(timer);
+}
+element.textContent = Math.floor(current).toLocaleString() + suffix;
+}, 40);
+}
+});
+</script>
+<script id="value-cards-interaction">
+document.addEventListener('DOMContentLoaded', function() {
+const valueCards = document.querySelectorAll('.value-card');
+const valueDetails = {
+integrity: {
+title: "Integrity in Action",
+content: "We ensure all our educational content is fact-checked, non-partisan, and sourced from reliable institutions. Our community guidelines promote respectful dialogue and honest discourse among all participants."
+},
+empowerment: {
+title: "Empowering Through Education",
+content: "We provide comprehensive voting guides, candidate research tools, and civic education workshops. Our goal is to transform complex political information into accessible, actionable knowledge for young voters."
+},
+inclusivity: {
+title: "Inclusive by Design",
+content: "Our platform welcomes Filipinos from all regions, socioeconomic backgrounds, and political perspectives. We provide content in multiple languages and ensure accessibility for users with different abilities."
+},
+innovation: {
+title: "Innovation in Civic Education",
+content: "We leverage technology, interactive tools, and modern communication methods to make civic education engaging. From mobile-friendly resources to community-driven content, we meet young voters where they are."
+}
+};
+valueCards.forEach(card => {
+card.addEventListener('click', function() {
+const valueType = this.dataset.value;
+const detail = valueDetails[valueType];
+showValueModal(detail.title, detail.content);
+});
+});
+function showValueModal(title, content) {
+const modal = document.createElement('div');
+modal.className = 'fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4';
+modal.innerHTML = `
+<div class="bg-white rounded-2xl p-8 max-w-2xl w-full transform transition-all duration-300 scale-95">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-gray-900">${title}</h3>
+<button class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700 transition-colors modal-close cursor-pointer">
+<i class="ri-close-line text-xl"></i>
+</button>
+</div>
+<p class="text-gray-700 leading-relaxed mb-6">${content}</p>
+<div class="flex justify-end">
+<button class="bg-primary hover:bg-blue-700 text-white px-6 py-3 !rounded-button font-semibold transition-colors whitespace-nowrap modal-close cursor-pointer">
+Got it!
+</button>
+</div>
+</div>
+`;
+document.body.appendChild(modal);
+setTimeout(() => {
+modal.querySelector('div').classList.remove('scale-95');
+modal.querySelector('div').classList.add('scale-100');
+}, 10);
+const closeButtons = modal.querySelectorAll('.modal-close');
+closeButtons.forEach(btn => {
+btn.addEventListener('click', () => {
+modal.querySelector('div').classList.add('scale-95');
+setTimeout(() => {
+document.body.removeChild(modal);
+}, 200);
+});
+});
+modal.addEventListener('click', function(e) {
+if (e.target === modal) {
+modal.querySelector('div').classList.add('scale-95');
+setTimeout(() => {
+document.body.removeChild(modal);
+}, 200);
+}
+});
+}
+});
+</script>
+<script id="interactive-buttons">
+document.addEventListener('DOMContentLoaded', function() {
+function showNotification(message, type = 'info') {
+const notification = document.createElement('div');
+notification.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 ${
+type === 'success' ? 'bg-green-500 text-white' :
+type === 'error' ? 'bg-red-500 text-white' :
+'bg-blue-500 text-white'
+}`;
+notification.textContent = message;
+document.body.appendChild(notification);
+setTimeout(() => {
+notification.classList.remove('translate-x-full');
+}, 100);
+setTimeout(() => {
+notification.classList.add('translate-x-full');
+setTimeout(() => {
+document.body.removeChild(notification);
+}, 300);
+}, 3000);
+}
+function showActionModal(title, content, actions) {
+const modal = document.createElement('div');
+modal.className = 'fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4';
+modal.innerHTML = `
+<div class="bg-white rounded-2xl p-8 max-w-lg w-full transform transition-all duration-300 scale-95">
+<div class="text-center mb-6">
+<h3 class="text-2xl font-bold text-gray-900 mb-4">${title}</h3>
+<p class="text-gray-600">${content}</p>
+</div>
+<div class="flex flex-col space-y-3">
+${actions.map(action => `
+<button class="action-btn bg-${action.color}-500 hover:bg-${action.color}-600 text-white px-6 py-3 !rounded-button font-semibold transition-colors whitespace-nowrap cursor-pointer" data-action="${action.type}">
+${action.label}
+</button>
+`).join('')}
+<button class="modal-close bg-gray-200 hover:bg-gray-300 text-gray-700 px-6 py-3 !rounded-button font-semibold transition-colors whitespace-nowrap cursor-pointer">
+Cancel
+</button>
+</div>
+</div>
+`;
+document.body.appendChild(modal);
+setTimeout(() => {
+modal.querySelector('div').classList.remove('scale-95');
+modal.querySelector('div').classList.add('scale-100');
+}, 10);
+const actionButtons = modal.querySelectorAll('.action-btn');
+actionButtons.forEach(btn => {
+btn.addEventListener('click', () => {
+const actionType = btn.dataset.action;
+modal.querySelector('div').classList.add('scale-95');
+setTimeout(() => {
+document.body.removeChild(modal);
+handleButtonAction(actionType);
+}, 200);
+});
+});
+const closeButton = modal.querySelector('.modal-close');
+closeButton.addEventListener('click', () => {
+modal.querySelector('div').classList.add('scale-95');
+setTimeout(() => {
+document.body.removeChild(modal);
+}, 200);
+});
+modal.addEventListener('click', function(e) {
+if (e.target === modal) {
+modal.querySelector('div').classList.add('scale-95');
+setTimeout(() => {
+document.body.removeChild(modal);
+}, 200);
+}
+});
+}
+function handleButtonAction(actionType) {
+switch(actionType) {
+case 'register':
+showNotification('Redirecting to voter registration portal...', 'info');
+setTimeout(() => {
+window.open('https://comelec.gov.ph/php-tpls-attachments/2016NLE/Forms/CEF01.pdf', '_blank');
+}, 1000);
+break;
+case 'precinct':
+showNotification('Opening precinct finder tool...', 'info');
+setTimeout(() => {
+window.open('https://comelec.gov.ph/', '_blank');
+}, 1000);
+break;
+case 'checklist':
+showNotification('Preparing your voting checklist...', 'success');
+setTimeout(() => {
+showVotingChecklist();
+}, 1000);
+break;
+case 'learn':
+showNotification('Accessing learning resources...', 'info');
+break;
+case 'community':
+showNotification('Welcome to the community!', 'success');
+break;
+case 'started':
+showNotification('Welcome! Let\'s get you started with voter education.', 'success');
+break;
+case 'download':
+showNotification('Preparing resource downloads...', 'info');
+break;
+default:
+showNotification('Feature coming soon!', 'info');
+}
+}
+function showVotingChecklist() {
+const modal = document.createElement('div');
+modal.className = 'fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4';
+modal.innerHTML = `
+<div class="bg-white rounded-2xl p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto transform transition-all duration-300 scale-95">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold text-gray-900">Voting Day Checklist</h3>
+<button class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700 transition-colors modal-close cursor-pointer">
+<i class="ri-close-line text-xl"></i>
+</button>
+</div>
+<div class="space-y-4">
+<div class="flex items-center space-x-3">
+<input type="checkbox" id="check1" class="w-5 h-5 text-primary">
+<label for="check1" class="text-gray-700">Bring valid ID with photo and signature</label>
+</div>
+<div class="flex items-center space-x-3">
+<input type="checkbox" id="check2" class="w-5 h-5 text-primary">
+<label for="check2" class="text-gray-700">Know your precinct number and location</label>
+</div>
+<div class="flex items-center space-x-3">
+<input type="checkbox" id="check3" class="w-5 h-5 text-primary">
+<label for="check3" class="text-gray-700">Arrive early (polls open at 6:00 AM)</label>
+</div>
+<div class="flex items-center space-x-3">
+<input type="checkbox" id="check4" class="w-5 h-5 text-primary">
+<label for="check4" class="text-gray-700">Shade circles completely, don't use X marks</label>
+</div>
+<div class="flex items-center space-x-3">
+<input type="checkbox" id="check5" class="w-5 h-5 text-primary">
+<label for="check5" class="text-gray-700">Don't exceed vote limits for each position</label>
+</div>
+<div class="flex items-center space-x-3">
+<input type="checkbox" id="check6" class="w-5 h-5 text-primary">
+<label for="check6" class="text-gray-700">Keep ballot clean and unmarked outside voting areas</label>
+</div>
+<div class="flex items-center space-x-3">
+<input type="checkbox" id="check7" class="w-5 h-5 text-primary">
+<label for="check7" class="text-gray-700">Feed ballot into machine properly</label>
+</div>
+<div class="flex items-center space-x-3">
+<input type="checkbox" id="check8" class="w-5 h-5 text-primary">
+<label for="check8" class="text-gray-700">Get your voter's receipt</label>
+</div>
+</div>
+<div class="flex justify-end mt-8">
+<button class="modal-close bg-primary hover:bg-blue-700 text-white px-6 py-3 !rounded-button font-semibold transition-colors whitespace-nowrap cursor-pointer">
+Got it!
+</button>
+</div>
+</div>
+`;
+document.body.appendChild(modal);
+setTimeout(() => {
+modal.querySelector('div').classList.remove('scale-95');
+modal.querySelector('div').classList.add('scale-100');
+}, 10);
+const closeButton = modal.querySelector('.modal-close');
+closeButton.addEventListener('click', () => {
+modal.querySelector('div').classList.add('scale-95');
+setTimeout(() => {
+document.body.removeChild(modal);
+}, 200);
+});
+modal.addEventListener('click', function(e) {
+if (e.target === modal) {
+modal.querySelector('div').classList.add('scale-95');
+setTimeout(() => {
+document.body.removeChild(modal);
+}, 200);
+}
+});
+}
+document.querySelectorAll('button').forEach(button => {
+if (button.textContent.includes('Start Learning')) {
+button.addEventListener('click', () => handleButtonAction('learn'));
+}
+if (button.textContent.includes('Register to Vote')) {
+button.addEventListener('click', () => {
+showActionModal(
+'Voter Registration',
+'Ready to register as a voter? We\'ll help you get started with the official process.',
+[
+{ label: 'Go to COMELEC Registration', type: 'register', color: 'blue' },
+{ label: 'Learn About Requirements First', type: 'learn', color: 'green' }
+]
+);
+});
+}
+if (button.textContent.includes('Register Now')) {
+button.addEventListener('click', () => handleButtonAction('register'));
+}
+if (button.textContent.includes('Find Location')) {
+button.addEventListener('click', () => handleButtonAction('precinct'));
+}
+if (button.textContent.includes('View Checklist')) {
+button.addEventListener('click', () => handleButtonAction('checklist'));
+}
+if (button.textContent.includes('Join Community')) {
+button.addEventListener('click', () => handleButtonAction('community'));
+}
+if (button.textContent.includes('Get Started Today')) {
+button.addEventListener('click', () => handleButtonAction('started'));
+}
+if (button.textContent.includes('Download Resources')) {
+button.addEventListener('click', () => handleButtonAction('download'));
+}
+});
+});
+</script>
+</body>
+</html>
